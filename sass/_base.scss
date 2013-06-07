@@ -1,0 +1,88 @@
+@import "compass";
+
+html
+{
+	font-size: 100%;
+}
+
+body
+{
+	// @include background(image-url("../images/force_web_bg.jpg"));
+	background-color: $primary-color;
+	background-image: url("../images/force_web_bg.jpg");
+}
+
+$slide-up-box-height: 300px;
+$slide-up-box-height: 18.75rem;
+
+*
+{
+	@include box-sizing(border-box);
+}
+
+@mixin contentWrapper
+{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.red
+{
+	background-color: red;
+}
+
+.green
+{
+	background-color: green;
+}
+
+.blue
+{
+	background-color: blue;
+}
+
+.contentWrapper
+{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.box-list
+{
+	@include block-grid(1);
+
+	@media #{$small}
+	{
+		@include block-grid(3, 3%);
+	}
+}
+
+.slide-up-boxes
+{
+	display: block;
+	overflow: hidden;
+	height: $slide-up-box-height;
+	@include background-image(url("../images/14select.jpeg"));
+
+	@media #{$small}
+	{
+		margin-top: 48px;
+		margin-top: 1.5rem;
+	}
+
+	.slide-content
+	{
+		height: $slide-up-box-height;
+		margin-top: $slide-up-box-height - 3rem;
+		@include transition-duration(1s);
+		@include transition-timing-function(ease);
+	}
+
+	&:hover
+	{
+		.slide-content
+		{
+			margin-top: 0;
+		}
+	}
+}

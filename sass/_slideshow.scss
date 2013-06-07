@@ -1,0 +1,65 @@
+.slideshow-wrapper
+{
+	@include clearfix;
+	max-width: 57em;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.slideshow-background
+{
+	@include clearfix;
+	background-color: $primary-color;
+}
+
+.disc
+{
+	@include block-grid(2, 4%);
+	@media #{$small}
+	{
+		@include block-grid(4, 4%);
+		height: 100px;
+	}
+
+	max-width: 912px;
+	margin: 20px auto 20px auto !important;
+
+	> li
+	{
+		text-align: center;
+	}
+
+	img
+	{
+		max-width: 100%;
+		height: 100px;
+	}
+}
+
+.orbit-bullets > li:hover + .disc > img
+	{
+		@include opacity(.3);
+	}
+
+	// > li
+	// {
+	// 	width: 200px;
+	// 	height: 100px;
+	// 	@include background-size(cover);
+	// 	&:nth-child(1) {
+	// 		background-image: url("../images/13Aj.team3.JPG");
+	// 	}
+	// 	&:nth-child(2) {
+	// 		background-image: url("../images/13Aj.team3.JPG");
+	// 	}
+	// 	&:nth-child(3) {
+	// 		background-image: url("../images/13Aj.team3.JPG");
+	// 	}
+	// 	&:nth-child(4) {
+	// 		background-image: url("../images/13Aj.team3.JPG");
+	// 	}
+	// 	&.active
+	// 	{
+	// 		@include background-size(cover);
+	// 	}
+	// }

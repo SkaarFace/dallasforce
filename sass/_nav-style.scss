@@ -1,3 +1,25 @@
+.top-bar-section li a.main-item
+{
+	background-color: rgba(black, 0);
+}
+
+.top-bar-section .dropdown li a {
+  background-color:rgba(black, .7); 
+  // &:hover:not(.button) {background-color:$main-item-hover;}
+}
+
+header
+{
+	.nav-grid
+	{
+		@include grid-row();
+	}
+	.contain-to-grid .top-bar
+	{
+		max-width: 55em;
+	}
+}
+
 @media #{$topbar-media-query}
 {
 	.top-bar .name

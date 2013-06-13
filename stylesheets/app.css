@@ -4722,7 +4722,7 @@ form.custom .custom.disabled {
   }
   /* line 452, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li a {
-    color: black;
+    color: white;
     line-height: 1;
     white-space: nowrap;
     padding: 7px 15px;
@@ -6657,65 +6657,82 @@ a.th {
 /* line 9, ../sass/_base.scss */
 html {
   font-size: 100%;
+  min-width: 350px;
 }
 
-/* line 14, ../sass/_base.scss */
+/* line 15, ../sass/_base.scss */
 body {
   background-color: rgba(0, 0, 0, 0);
   background-image: url("../images/force_web_bg.jpg");
   color: white;
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
+header h1 {
+  margin: 0;
+}
+
+/* line 32, ../sass/_base.scss */
 h1 {
   text-align: center;
   color: rgba(2, 38, 9, 0.8);
   -webkit-text-fill-color: transparent;
+  font-family: Century Gothic, sans-serif;
   background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(rgba(2, 38, 9, 0.8), rgba(0, 0, 0, 0.8));
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 h2 {
   font-size: 3em;
   text-align: center;
   color: white;
   text-decoration: underline;
+  font-family: Century Gothic, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 0;
 }
 
-/* line 47, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 h3 {
   text-align: center;
   font-size: 2em;
   color: white;
+  font-family: Century Gothic, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 0;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 svg {
   height: 8em;
   width: 100%;
 }
 
-/* line 60, ../sass/_base.scss */
+/* line 69, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
-/* line 63, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 69, ../sass/_base.scss */
+/* line 78, ../sass/_base.scss */
+.shadowed {
+  background-image: url("../images/shadow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+/* line 86, ../sass/_base.scss */
 .full-container {
   width: 100%;
   *zoom: 1;
@@ -6727,122 +6744,115 @@ a:hover {
   background-image: linear-gradient(top, #022609 0%, rgba(2, 38, 9, 0.11) 100%);
 }
 
-/* line 77, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 .red {
   background-color: red;
 }
 
-/* line 82, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 .green {
   background-color: green;
 }
 
-/* line 87, ../sass/_base.scss */
+/* line 103, ../sass/_base.scss */
 .blue {
   background-color: blue;
 }
 
-/* line 92, ../sass/_base.scss */
+/* line 108, ../sass/_base.scss */
 .contentWrapper {
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 114, ../sass/_base.scss */
 .box-list {
-  display: block;
-  padding: 0;
-  margin: -0.625em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 27, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-.box-list > li {
-  display: inline;
-  height: auto;
-  float: left;
-  padding: 0 0.625em 1.25em;
-}
-/* line 36, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-.box-list > li {
+
+/* line 131, ../sass/_base.scss */
+.box-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
   width: 100%;
-  padding: 0 0.625em 1.25em;
-}
-/* line 40, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-.box-list > li:nth-of-type(n) {
-  clear: none;
-}
-/* line 41, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-.box-list > li:nth-of-type(1n+1) {
-  clear: both;
+  float: left;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 98, ../sass/_base.scss */
-  .box-list {
-    display: block;
-    padding: 0;
-    margin: -0.75%;
-    overflow: hidden;
-    *zoom: 1;
-  }
-  /* line 27, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-  .box-list > li {
-    display: inline;
-    height: auto;
-    float: left;
-    padding: 0 0.75% 1.5%;
-  }
-  /* line 36, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-  .box-list > li {
+  /* line 131, ../sass/_base.scss */
+  .box-list li {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     width: 33.33333%;
-    padding: 0 0.75% 1.5%;
-  }
-  /* line 40, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-  .box-list > li:nth-of-type(n) {
-    clear: none;
-  }
-  /* line 41, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.2.1/scss/foundation/components/_block-grid.scss */
-  .box-list > li:nth-of-type(3n+1) {
-    clear: both;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
-
-/* line 113, ../sass/_base.scss */
+/* line 147, ../sass/_base.scss */
 .box-list li:nth-child(1) .slide-up-boxes {
+  margin-top: 20px;
   background-image: url("../images/slider1.png");
 }
-/* line 120, ../sass/_base.scss */
+@media only screen and (min-width: 768px) {
+  /* line 147, ../sass/_base.scss */
+  .box-list li:nth-child(1) .slide-up-boxes {
+    margin-top: 0px;
+  }
+}
+/* line 159, ../sass/_base.scss */
 .box-list li:nth-child(2) .slide-up-boxes {
   background-image: url("../images/slider2.png");
 }
-/* line 127, ../sass/_base.scss */
+/* line 166, ../sass/_base.scss */
 .box-list li:nth-child(3) .slide-up-boxes {
+  margin-bottom: 10px;
   background-image: url("../images/slider3.png");
 }
+@media only screen and (min-width: 768px) {
+  /* line 166, ../sass/_base.scss */
+  .box-list li:nth-child(3) .slide-up-boxes {
+    margin-bottom: 0px;
+  }
+}
 
-/* line 134, ../sass/_base.scss */
+/* line 178, ../sass/_base.scss */
 .slide-up-boxes {
   display: block;
   overflow: hidden;
+  height: 200px;
   height: 12.5rem;
+  max-width: 300px;
   max-width: 18.75rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
 }
-@media only screen and (min-width: 768px) {
-  /* line 134, ../sass/_base.scss */
-  .slide-up-boxes {
-    margin-top: 48px;
-    margin-top: 1.5rem;
-  }
-}
-/* line 146, ../sass/_base.scss */
-.slide-up-boxes h2, .slide-up-boxes p {
+/* line 187, ../sass/_base.scss */
+.slide-up-boxes p {
   color: white;
+  font-size: 2em;
+  font-family: Century Gothic, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 0;
 }
-/* line 152, ../sass/_base.scss */
+/* line 195, ../sass/_base.scss */
 .slide-up-boxes .slide-content {
+  height: 200px;
   height: 12.5rem;
-  margin-top: 9.5rem;
+  margin-top: 136px;
+  margin-top: 8.5rem;
+  padding: 8px;
+  padding: .5rem;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -6851,9 +6861,9 @@ a:hover {
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: rgba(73, 73, 73, 0.6);
+  background-color: rgba(80, 80, 80, 0.6);
 }
-/* line 164, ../sass/_base.scss */
+/* line 210, ../sass/_base.scss */
 .slide-up-boxes:hover .slide-content {
   margin-top: 0;
 }
@@ -6866,8 +6876,14 @@ a:hover {
   margin: 0 auto;
   margin-top: 20px;
 }
+/* line 8, ../sass/_slideshow.scss */
+.slideshow-wrapper .orbit-container {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
+}
 
-/* line 10, ../sass/_slideshow.scss */
+/* line 15, ../sass/_slideshow.scss */
 .slideshow-background {
   overflow: hidden;
   *zoom: 1;
@@ -6880,29 +6896,41 @@ a:hover {
   background-image: linear-gradient(top, rgba(2, 39, 9, 0.9) 0%, rgba(0, 117, 53, 0.9) 50%, rgba(2, 39, 9, 0.9) 100%);
 }
 
-/* line 17, ../sass/_slideshow.scss */
+/* line 22, ../sass/_slideshow.scss */
 .text-slide {
   position: relative;
 }
-/* line 21, ../sass/_slideshow.scss */
+/* line 26, ../sass/_slideshow.scss */
 .text-slide p {
   position: absolute;
+  text-align: right;
   right: 0%;
-  bottom: 5%;
+  padding-right: 4%;
+  bottom: -10%;
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 0;
+  font-family: Century Gothic, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.7) 3px 3px 1px;
   width: 40%;
-  font-size: 2em;
+  font-size: 1.5em;
+  line-height: 90%;
+  font-weight: bold;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF000000', endColorstr='#FF000000');
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.09)), color-stop(21%, rgba(0, 0, 0, 0.45)), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.45) 21%, #000000 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.45) 21%, #000000 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.45) 21%, #000000 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.45) 21%, #000000 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(21%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.8) 100%);
+}
+@media only screen and (min-width: 768px) {
+  /* line 26, ../sass/_slideshow.scss */
+  .text-slide p {
+    bottom: 5%;
+    font-size: 2em;
+  }
 }
 
-/* line 34, ../sass/_slideshow.scss */
+/* line 51, ../sass/_slideshow.scss */
 .disc {
   display: block;
   padding: 0;
@@ -6933,7 +6961,7 @@ a:hover {
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  /* line 34, ../sass/_slideshow.scss */
+  /* line 51, ../sass/_slideshow.scss */
   .disc {
     display: block;
     padding: 0;
@@ -6963,24 +6991,50 @@ a:hover {
     clear: both;
   }
 }
-/* line 46, ../sass/_slideshow.scss */
+/* line 63, ../sass/_slideshow.scss */
 .disc > li {
   text-align: center;
 }
-/* line 51, ../sass/_slideshow.scss */
+/* line 68, ../sass/_slideshow.scss */
 .disc img {
   max-width: 100%;
   height: 100px;
 }
 
-/* line 58, ../sass/_slideshow.scss */
+/* line 75, ../sass/_slideshow.scss */
 .orbit-bullets > li:hover + .disc > img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
+/* line 2, ../sass/_nav-style.scss */
+.top-bar-section li a.main-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* line 6, ../sass/_nav-style.scss */
+.top-bar-section .dropdown li a {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 14, ../sass/_nav-style.scss */
+header .nav-grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 18, ../sass/_nav-style.scss */
+header .contain-to-grid .top-bar {
+  max-width: 55em;
+}
+
 @media only screen and (min-width: 58.75em) {
-  /* line 4, ../sass/_nav-style.scss */
+  /* line 26, ../sass/_nav-style.scss */
   .top-bar .name {
     display: none;
   }
@@ -7031,7 +7085,7 @@ a:hover {
 
 /* line 2, ../sass/_footer.scss */
 footer {
-  background: rgba(73, 73, 73, 0.7);
+  background: rgba(0, 0, 0, 0.65);
   color: white;
 }
 /* line 7, ../sass/_footer.scss */

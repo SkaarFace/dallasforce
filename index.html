@@ -6,136 +6,244 @@
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Foundation 4</title>
+  <title>FORCE Volleyball Club</title>
 
   
-  <link rel="stylesheet" href="stylesheets/app.css" />
-  
-
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  	<link rel="stylesheet" href="./stylesheets/app.css" />
+	<link rel="stylesheet" href="./responsive-tables.css">
+	
+	<script src="stylesheet" href="./javascripts/responsive-tables.js"</script>
+ 	<script src="./javascripts/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
 
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Welcome to Foundation</h2>
-			<p>This is version 4.2.1.</p>
-			<hr />
+	<header class="shadowed">
+		<h1><a href = "./index.html">Force Volleyball Club</a></h1>
+		
+<!-- 		<div class="nav-grid contentWrapper"> -->
+			<div class="contain-to-grid">
+				<nav class = "top-bar">
+					<ul class = "title-area">
+						<li class="name"><h1>Navigation</h1></li>
+						<li class="toggle-topbar menu-icon">
+							<a href = "#">
+								<span>Menu</span>
+							</a>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+							<li><a href="./index.html" class="main-item">Home</a></li>
+							<li class="divider"></li>
+							<li class="has-dropdown"><a href="/teams.html" class="main-item">Teams</a>
+								<ul class="dropdown">
+									<li><a href="./teams/national.html">National</a></li>
+									<li><a href="./teams/american.html">American</a></li>
+									<li><a href="./teams/select-regional.html">Select/Regional</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="has-dropdown">
+								<a href="./staff.html" class="main-item">Staff</a>
+								<ul class="dropdown">
+									<li><a href="./staff/coaching-team.html">Coaching Team</a></li>
+									<li><a href="./staff/coaching-assignments.html">Coaching Assignments</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="has-dropdown">
+								<a href="./forms.html" class="main-item">Forms</a>
+								<ul class="dropdown">
+									<li><a href="./forms/tryout-paper-work.html">Tryout Paper Work</a></li>
+									<li><a href="./forms/age-definitions.html">Age Definitions</a></li>
+									<li><a href="./forms/player-handbook.html">Player Handbook</a></li>
+									<li><a href="./forms/parent-handbook.html">Parent Handbook</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="has-dropdown">
+								<a href="./schedules-directions.html" class="main-item">Schedules/Directions</a>
+								<ul class="dropdown">
+									<li><a href="./schedules-directions/tournament-schedules.html">Tournament Schedules</a></li>
+									<li><a href="./schedules-directions/maps-to-competition.html">Maps to Competition</a></li>
+									<li><a href="./schedules-directions/maps-to-practice-sites.html">Maps to Practice Sites</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="has-dropdown">
+								<a href="./force-programs.html" class="main-item">FORCE Programs</a>
+								<ul class="dropdown">
+									<li><a href="http://www.psaplano.org/testsite/Home/Sports/Volleyball/PowerLeagueVolleyballLeague.aspx">Power League</a></li>
+									<li><a href="./force-programs/clinics.html">Clinics</a></li>
+									<li><a href="http://www.psaplano.org/testsite/Home/Sports/Volleyball/SchoolTeamTryoutPrepProgram.aspx">School Team Tryoout Prep (TOP)</a></li>
+									<li><a href="http://www.psaplano.org/testsite/Home/Sports/Volleyball/VolleyballSkillsAcademy.aspx">FORCE Skills Classes</a></li>
+									<li><a href="./force-programs/private-lessons.html">Private Lessons</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li class="has-dropdown" class="main-item">
+								<a href="./join-our-club.html">Join Our Club</a>
+								<ul class="dropdown">
+									<li><a href="./join-our-club/club-tryouts.html">Club Tryouts</a></li>
+									<li><a href="./join-our-club/pre-tryout-clinics.html">Pre-Tryout Clinics</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li><a href="./faq.html" class="main-item">FAQ</a></li>
+							<li class="divider"></li>
+						</ul>
+					</section>
+				</nav>
+		<!-- 	</div> -->
 		</div>
-	</div>
+	</header>
 
-	<div class="row">
-		<div class="large-8 columns">
-			<h3>The Grid</h3>
+	<div class = "slideshow-background shadowed">
+		<div class="slideshow-wrapper">
+			<div class="preloader"></div>
+			<ul data-orbit>
+				<li data-orbit-slide = "headline-1">
 
-			<!-- Grid Example -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-			</div>
-
-			<h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-		</div>
-
-		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+					<div class = "text-slide">
+						<img src="./images/image1.png" alt="The team highfives"/>
+						<div class = "caption">						
+							<p>
+								Check Out Our Summer Camps
+								&amp; Programs
+							</p>
+						</div>
+					</div>	
+				</li>
+				<li data-orbit-slide = "headline-2">
+					<img src="./images/image2.png" alt="The team in the huddle" />
+				</li>
+				<li data-orbit-slide = "headline-3">	
+					<img src="./images/image3.png" alt="Team photo" />
+				</li>
+				<li data-orbit-slide = "headline-4">
+					<img src="./images/image4.png" alt="More team photos" />
+				</li>
 			</ul>
 		</div>
+
+<!-- 		<ul class="disc">
+			<li><a href="#" data-orbit-link="headline-1">
+				<img src="./images/image1.png" alt="The team highfives"/>
+			</a></li>
+			<li><a href="#" data-orbit-link="headline-2">
+				<img src="./images/image2.png" alt="The team highfives"/>
+			</a></li>
+			<li><a href="#" data-orbit-link="headline-3">
+				<img src="./images/image3.png" alt="The team highfives"/>
+			</a></li>
+			<li><a href="#" data-orbit-link="headline-4">
+				<img src="./images/image4.png" alt="The team highfives"/>
+			</a></li>
+		</ul> -->
 	</div>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
+	<section class = "contentWrapper shadowed">
+		<ul class = "box-list">
+			<li>
+				<a href = "./teams.html">
+					<div class = "slide-up-boxes">
+						<div class = "slide-content">	
+							<h3>
+								Teams
+							</h3>
+							<p>Click Here to Find Your Team</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href = "./force-programs.html">		
+					<div class="slide-up-boxes">
+						<div class = "slide-content">
+							<h3>FORCE Programs</h3>
+							<p>Click Here For Our FORCE Programs</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="/join-our-club.html">
+					<div class="slide-up-boxes">
+						<div class = "slide-content">
+							<h3>Join Our Club</h3>
+							<p>Click Here to Join Our Club</p>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<footer>
+		<div class="container shadowed">
+			<ul class="footer-grid">		
+					<li class="footer-item">
+						<h3>RelatedLinks</h3>
+						<ul>
+							<li><a href="http://www.psaplano.org/testsite/">Plano Sports</a></li>
+							<li><a href="https://secure.sports-it.com/mysam/?cid=psa">My SAM</a></li>
+							<li><a href="http://www.ntrvolleyball.org/">North Texas Region</a></li>
+							<li><a href="http://www.usavolleyball.org/">USA Volleyball</a></li>
+							<li><a href="http://www.ncaa.com/">NCAA</a></li>
+							<li><a href="http://www.uil.utexas.edu/index.html">UIL</a></li>
+							<li><a href="http://www.avca.org/">AVCA</a></li>
+						</ul>
+					</li>
+					<li class="footer-item">
+						<h3>Navigation</h3>
+						<ul>
+							<li><a href="./teams.html">Teams</a></li>
+							<li><a href="./staff.html">Staff</a></li>
+							<li><a href="./forms.html">Forms</a></li>
+							<li><a href="./schedules-directions.html">Schedules/Directions</a></li>
+							<li><a href="./force-programs.html">FORCE Programs</a></li>
+							<li><a href="./join-our-club.html">Join Our Club</a></li>
+							<li><a href="./faq">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="footer-item">
+						<h3>Contact</h3>
+						<ul>
+							<li>
+								FORCE Volleyball Club</br>
+								6500 Preston Meadow Drive<br/>
+								Plano, TX, 75024</br>
+							</li>
+						</br>
+							<li>
+								972-208-3835
+								</br>
+								<a href="mailto:aimee.dallasforce@gmail.com">aimee.dallasforce@gmail.com</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</footer>
+
+	<script src="./javascripts/vendor/jquery.js"></script>
   
-  <script src="javascripts/foundation/foundation.js"></script>
+  	<script src="./javascripts/foundation/foundation.js"></script>
+		
+	<script src="./javascripts/foundation/foundation.dropdown.js"></script>
+		
+	<script src="./javascripts/foundation/foundation.orbit.js"></script>
 	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
+	<script src="./javascripts/foundation/foundation.topbar.js"></script>
 	
   
   <script>
-    $(document).foundation();
+  	$(document).foundation('orbit', {
+  		'bullets': true
+  	})
+  	.foundation('topbar');
   </script>
 </body>
 </html>

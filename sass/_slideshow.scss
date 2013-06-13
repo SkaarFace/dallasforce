@@ -4,6 +4,11 @@
 	max-width: 60em;
 	margin: 0 auto;
 	margin-top: 20px;
+	.orbit-container
+	{
+		@include box-shadow(rgba(black, .9) 0px 0px 10px);
+
+	}
 }
 
 .slideshow-background
@@ -20,14 +25,26 @@
 	p
 	{
 		position: absolute;
+		text-align: right;
 		right: 0%;
-		bottom: 5%;
+		padding-right: 4%;
+		bottom: -10%;
 		color: white;
-		@include text-shadow(rgba(black, .7) 1px 1px 0);
+		font-family: Century Gothic, sans-serif;
+		@include text-shadow(rgba(black, .7) 3px 3px 1px);
 		width: 40%;
-		font-size: 2em;
+		font-size: 1.5em;
+		line-height: 90%;
+		font-weight: bold;
+		@media #{$small}
+		{
+			bottom: 5%;
+			font-size: 2em;
+		}
 		@include filter-gradient(#000, #000, horizontal); // IE6-9
-		@include background-image(linear-gradient(left, hsla(0,0%,0%,0.09) 0%,hsla(0,0%,0%,0.45) 21%,hsla(0,0%,0%,1) 100%));	}
+		@include background-image(linear-gradient(left, hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.3) 21%,hsla(0,0%,0%,.8) 100%));
+
+	}
 }
 
 .disc

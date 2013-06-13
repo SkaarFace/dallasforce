@@ -1,0 +1,15 @@
+.main-content
+{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	color: white;
+	@include filter-gradient($primary-color, $primary-color, vertical); // IE6-9
+	@include background-image(linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.05) 100%));	
+
+	p{
+		@include text-shadow(rgba(black, .7) 2px 2px 0);
+	}
+
+	
+}

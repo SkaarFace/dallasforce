@@ -34,6 +34,23 @@ h1 {
 	-webkit-background-clip: text;
 }
 
+h2
+{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+	@include text-shadow(rgba(black, .7) 2px 2px 0);
+}
+
+h3
+{
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	@include text-shadow(rgba(black, .7) 2px 2px 0);
+}
+
 svg {
   height: 8em;
   width: 100%;
@@ -46,6 +63,14 @@ a
 	{
 		text-decoration: underline;
 	}
+}
+
+.full-container
+{
+	width: 100%;
+	@include filter-gradient($primary-color, $primary-color, vertical); // IE6-9
+	@include background-image(linear-gradient(top, rgba($primary-color,1) 0%,rgba($primary-color,0.11) 100%));
+
 }
 
 .red
@@ -65,7 +90,7 @@ a
 
 .contentWrapper
 {
-	max-width: 1000px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -79,25 +104,38 @@ a
 	}
 }
 
+.box-list li
+{
+
+	&:nth-child(1)
+	{
+		.slide-up-boxes
+		{
+			@include background-image(url("../images/slider1.png"));
+		}
+	}
+	&:nth-child(2)
+	{
+		.slide-up-boxes
+		{
+			@include background-image(url("../images/slider2.png"));
+		}
+	}
+	&:nth-child(3)
+	{
+		.slide-up-boxes
+		{
+			@include background-image(url("../images/slider3.png"));
+		}
+	}
+}
+
 .slide-up-boxes
 {
 	display: block;
 	overflow: hidden;
 	height: $slide-up-box-height;
-	width: $slide-up-box-width;
-
-	&:nth-child(1)
-	{
-		@include background-image(url("../images/slider1.png"));
-	}
-	&:nth-child(2)
-	{
-		@include background-image(url("../images/slider2.png"));
-	}
-	&:nth-child(3)
-	{
-		@include background-image(url("../images/slider3.png"));
-	}
+	max-width: $slide-up-box-width;
 
 	@media #{$small}
 	{

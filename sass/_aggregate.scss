@@ -1,10 +1,4 @@
-.full-container
-{
-	width: 100%;
-	@include filter-gradient($primary-color, $primary-color, vertical); // IE6-9
-	@include background-image(linear-gradient(top, rgba($primary-color,1) 0%,rgba($primary-color,0.11) 100%));
 
-}
 
 .aggregate
 {
@@ -13,14 +7,8 @@
 	max-width: 960px;
 	color: white;
 	@include filter-gradient($primary-color, $primary-color, vertical); // IE6-9
-@include background-image(linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.05) 100%));	h2
-	{
-		font-size: 3em;
-		text-align: center;
-		color: white;
-		text-decoration: underline;
-		@include text-shadow(rgba(black, .7) 2px 2px 0);
-	}
+	@include background-image(linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.05) 100%));	
+	
 	ul
 	{
 		text-align: center;

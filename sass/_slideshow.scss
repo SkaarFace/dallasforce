@@ -1,7 +1,7 @@
 .slideshow-wrapper
 {
 	@include clearfix;
-	max-width: 57em;
+	max-width: 60em;
 	margin: 0 auto;
 	margin-top: 20px;
 }
@@ -9,7 +9,25 @@
 .slideshow-background
 {
 	@include clearfix;
-	background-color: $primary-color;
+	@include filter-gradient($primary-color, $primary-color, vertical); // IE6-9
+	@include background-image(linear-gradient(top, hsla(132,90%,8%,0.9) 0%,hsla(147,100%,23%,0.9) 50%,hsla(132,90%,8%,0.9) 100%));
+}
+
+.text-slide
+{
+	position: relative;
+
+	p
+	{
+		position: absolute;
+		right: 0%;
+		bottom: 5%;
+		color: white;
+		@include text-shadow(rgba(black, .7) 1px 1px 0);
+		width: 40%;
+		font-size: 2em;
+		@include filter-gradient(#000, #000, horizontal); // IE6-9
+		@include background-image(linear-gradient(left, hsla(0,0%,0%,0.09) 0%,hsla(0,0%,0%,0.45) 21%,hsla(0,0%,0%,1) 100%));	}
 }
 
 .disc

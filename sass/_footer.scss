@@ -1,0 +1,46 @@
+footer
+{
+	background: rgba(#494949, .7);
+	color: white;
+
+	.footer-grid
+	{
+		@include block-grid(1);
+
+		@media #{$small}
+		{
+			@include block-grid(3);
+		}
+	}
+
+	h3
+	{
+		color: white;
+	}
+
+	.footer-item
+	{
+		ul
+		{
+			list-style: none;
+			li
+			{
+				a
+				{
+					color: white;
+					text-decoration: none;
+					&:hover
+					{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.container
+{
+	margin: 0 auto;
+	max-width: 960px;
+}

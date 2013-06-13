@@ -1,0 +1,13 @@
+@mixin gradient-darken($color)
+{
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: $color; // Old browsers
+	@include filter-gradient($color, darken($color, 20%), vertical); // IE6-9
+	@include background-image(linear-gradient(top, $color 0%,darken($color, 20%) 100%));
+}
+
+@mixin contentWrapper
+{
+	max-width: 1000px;
+	margin: 0 auto;
+}

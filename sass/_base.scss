@@ -1,5 +1,10 @@
 @import "compass";
 
+$slide-up-box-height: 200px;
+$slide-up-box-height: 12.5rem;
+$slide-up-box-width: 300px;
+$slide-up-box-width: 18.75rem;
+
 html
 {
 	font-size: 100%;
@@ -7,23 +12,40 @@ html
 
 body
 {
+	background-color: rgba(0,0,0,0);
 	// @include background(image-url("../images/force_web_bg.jpg"));
-	background-color: $primary-color;
 	background-image: url("../images/force_web_bg.jpg");
+	color: white;
 }
-
-$slide-up-box-height: 300px;
-$slide-up-box-height: 18.75rem;
 
 *
 {
 	@include box-sizing(border-box);
 }
 
-@mixin contentWrapper
+h1 {
+	text-align: center;
+	color: $primary-color;
+	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent),
+	         -webkit-linear-gradient($primary-color, 
+	         	darken($primary-color, 20%));
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+}
+
+svg {
+  height: 8em;
+  width: 100%;
+}
+
+a
 {
-	max-width: 1000px;
-	margin: 0 auto;
+	text-decoration: none;
+	&:hover
+	{
+		text-decoration: underline;
+	}
 }
 
 .red
@@ -53,7 +75,7 @@ $slide-up-box-height: 18.75rem;
 
 	@media #{$small}
 	{
-		@include block-grid(3, 3%);
+		@include block-grid(3, 1.5%);
 	}
 }
 
@@ -62,7 +84,20 @@ $slide-up-box-height: 18.75rem;
 	display: block;
 	overflow: hidden;
 	height: $slide-up-box-height;
-	@include background-image(url("../images/14select.jpeg"));
+	width: $slide-up-box-width;
+
+	&:nth-child(1)
+	{
+		@include background-image(url("../images/slider1.png"));
+	}
+	&:nth-child(2)
+	{
+		@include background-image(url("../images/slider2.png"));
+	}
+	&:nth-child(3)
+	{
+		@include background-image(url("../images/slider3.png"));
+	}
 
 	@media #{$small}
 	{
@@ -70,12 +105,19 @@ $slide-up-box-height: 18.75rem;
 		margin-top: 1.5rem;
 	}
 
+	h2, p{
+		color: white;
+		@include text-shadow(rgba(black, .7) 2px 2px 0)
+	}
+
 	.slide-content
 	{
 		height: $slide-up-box-height;
+		// margin-top: $slide-up-box-height - 48px;
 		margin-top: $slide-up-box-height - 3rem;
 		@include transition-duration(1s);
 		@include transition-timing-function(ease);
+		background-color: rgba(#494949, .6);
 	}
 
 	&:hover

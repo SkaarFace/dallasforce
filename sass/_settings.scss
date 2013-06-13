@@ -28,6 +28,7 @@ $em-base: 16px !default;
 
    $default-float: left;
 
+// $body-bg: $primary-color;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -43,12 +44,10 @@ $em-base: 16px !default;
 
 // Colors
 
-   $primary-color: rgba(green, .8);
+// $primary-color: rgba(green, .8);
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
-
-   $body-bg: $primary-color;
 
 // Make sure border radius matches unless we want it different.
 
@@ -125,7 +124,7 @@ $em-base: 16px !default;
 // Maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-   $block-grid-default-spacing: emCalc(0px);
+// $block-grid-default-spacing: emCalc(0px);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -1203,12 +1202,12 @@ $em-base: 16px !default;
 
 // Background color for the top bar
 
-   $topbar-bg:                            $primary-color !default;
+// $topbar-bg:                            $primary-color !default;
 
 // Height and margin
 
 // $topbar-height:                        45px;
-   $topbar-margin-bottom:                 emCalc(0px);
+// $topbar-margin-bottom:                 emCalc(0px);
 
 // Control Input height for top bar
 
@@ -1221,7 +1220,7 @@ $em-base: 16px !default;
 
 // Style the top bar dropdown elements
 
-   $topbar-dropdown-bg:                   $primary-color;
+// $topbar-dropdown-bg:                   $primary-color;
 // $topbar-dropdown-link-color:           #fff;
 // $topbar-dropdown-link-bg:              lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size:          5px;
